@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+h2, h3, table, .info {
+    margin: 0 auto;
+}
+
+h2 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+p {
+    text-indent: 20px;
+}
+
+
+
+.population {
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    max-width: 887px;
+}
+.table td, .table th {
+    padding: 10px;
+}
