@@ -1,4 +1,5 @@
 .main {
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -14,15 +15,26 @@ h2 {
     padding-top: 30px;
 }
 
-p {
-    text-indent: 20px;
-}
-
-
+figure {
+    float: right;
+    width: min-content;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    padding: 0.5em;
+    width: 300px;
+  }
+  img.scaled {
+    min-width: 210px;
+    max-width: 250px;
+  }
 
 .population {
     display: flex;
     flex-direction: column;
+    overflow-x: scroll;
 }
 
 .table {
@@ -30,4 +42,16 @@ p {
 }
 .table td, .table th {
     padding: 10px;
+}
+
+@media(max-width: 900px) {
+    figure {  
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+      img.scaled {
+        min-width: 210px;
+        max-width: 250px;
+      }
 }

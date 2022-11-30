@@ -11,6 +11,11 @@ html, body {
     height    : 100vh;
 }
 
+p {
+    text-indent: 20px;
+}
+
+
 /* Overall */
 .first-section,
 .footer {
@@ -95,39 +100,6 @@ html, body {
     width : 450px;
     height: 90%;
 }
-
-/* General */
-.general {
-    margin: 20px;
-}
-
-figure {
-    margin-left: auto;
-    float: right;
-    width: 30%;
-    text-align: center;
-    font-style: italic;
-    font-size: smaller;
-    text-indent: 0;
-    border: thin silver solid;
-    border-radius: 5px;
-    margin: 0.5em;
-    padding: 0.5em;
-}
-
-figcaption {
-    background-color: rgb(212, 212, 212);
-}
-
-#flag {
-    width: 100%;
-}
-
-#emblem {
-    width: 100%;
-    height: 255px;
-}
-
 
 /* Footer */
 .footer {

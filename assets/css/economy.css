@@ -1,0 +1,34 @@
+.general {
+    width: 80%;
+    margin: 20px auto;
+}
+figure {
+    float: right;
+    width: min-content;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    padding: 0.5em;
+    
+    width: auto;
+  }
+  figcaption {
+    background-color: rgb(212, 212, 212);
+}
+  img.scaled {
+    min-width: 500px;
+    max-width: 600px;
+  }
+@media(max-width: 900px) {
+    figure {  
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+      img.scaled {
+        min-width: 300px;
+        max-width: 500px;
+      }
+}
