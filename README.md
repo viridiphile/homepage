@@ -14,3 +14,8 @@ For example, you can use JavaScript to add alerts,
    on mobile devices as well as laptops and desktops.
 
 main styles in one place, so we can have them applied everywhere
+
+
+LOOK INTO .MAIN AND .GENERAL, to fix nature.hmtl styling
+
+CREDITS TO BE MADE IN THE MODAL FORM

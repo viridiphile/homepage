@@ -2,13 +2,26 @@
     margin     : 0;
     padding    : 0;
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    overflow-x: hidden;
+    font-size  : 18px;
+    overflow-x : hidden;
 }
 
-html, body {
-    width: 100%;
-    height    : 100vh;
+html,
+body {
+    width : 100%;
+    height: 100vh;
+}
+
+.main {
+    width    : 80%;
+    margin   : 20px auto;
+    max-width: 1400px;
+}
+
+h2,
+h4 {
+    text-align: center;
+    padding   : 15px;
 }
 
 p {
@@ -25,16 +38,15 @@ p {
 }
 
 .navbar,
-.header{
-    display        : flex;
-    margin         : 0 auto;
-    width          : 80%;
+.header {
+    display: flex;
+    margin : 0 auto;
+    width  : 80%;
 }
 
 /* Navbar */
 .navbar {
     justify-content: space-between;
-    align-items    : center;
     padding        : 15px;
 }
 
@@ -46,7 +58,7 @@ p {
 
 .navbar .links {
     display        : flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navbar .links a {
@@ -56,21 +68,17 @@ p {
     float          : right;
 }
 
-.navbar .link:hover {
-    background-color: #2f3e53;
-}
-
 /* Header */
 .header {
     height: 470px;
 
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 }
 
 .secondary-text-links {
-    display: block;
-    width  : 40%;
+    display     : block;
+    width       : 40%;
     margin-right: 30px;
 }
 
@@ -82,18 +90,18 @@ p {
 }
 
 .header .secondary-text-links p {
-    color    : #E5E7EB;
+    color: #E5E7EB;
 }
 
-.header .secondary-text-links button{
-    margin-top: 17px;
+.header .secondary-text-links button {
+    margin-top      : 17px;
     background-color: #3882F6;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
+    color           : white;
+    font-size       : 16px;
+    font-weight     : 600;
+    padding         : 10px 20px;
+    border-radius   : 10px;
+    border          : none;
 }
 
 .header img {
@@ -101,10 +109,106 @@ p {
     height: 90%;
 }
 
-/* Footer */
-.footer {
-    padding        : 35px;
-    display        : flex;
-    align-items    : center;
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #1F2937;
+    color: white;
+  }
+
+  .modal-header {
+    justify-content: flex-start;
+  }
+  
+  .modal-body {padding: 7px 16px;}
+
+  .modal-body>h4 {
+    text-align: left;
+  }
+
+  .modal-body a {
+    text-decoration: none;
+    color: #1F2937;
+    font-size: 22px;
+  }
+  
+  .modal-footer {
     justify-content: space-around;
+    padding: 2px 16px;
+    background-color: #1F2937;
+    color: white;
+  }
+  
+
+/* Footer */
+.ftr {
+  padding        : 35px;
+  display        : flex;
+  align-items    : center;
+  justify-content: space-around;
 }
+
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }

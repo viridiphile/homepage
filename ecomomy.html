@@ -8,20 +8,19 @@
     <title>Kazakhstan</title>
     <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/kz.ico">
-
-    <!-- CSS Styling -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/economy.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/economy.css">
 </head>
 
 <body>
-    <div class="main">
+    <div class="all">
         <div class="first-section">
             <div class="navbar">
                 <a class="logo" href="./index.html">Kz.</a>
@@ -30,30 +29,77 @@
                     <a href="./ecomomy.html">Economy</a>
                     <a href="./nature.html">Nature</a>
                     <a href="./culture.html">Culture</a>
-                    <a href="#credits">Credits</a>
+                    <a id="myBtn">Credits</a>
                 </div>
             </div>
         </div>
 
-        <div class="general">
-            <!-- Move the photo to the middle -->
+        <div class="main">
+            <h2>Economy</h2>
+
+            <p>Kazakhstan's economy, supported by rising oil output and prices, grew at an average of 8% per year until
+                2013, before suffering a slowdown in 2014 and 2015. Kazakhstan was the first former Soviet Republic to
+                repay all of its debt to the International Monetary Fund, 7 years ahead of schedule.</p>
+            <p>In September 2002, Kazakhstan became the first country in the CIS to receive an investment grade credit
+                rating from a major international credit rating agency. By late December 2003, Kazakhstan's gross
+                foreign debt was about $22.9 billion. Total governmental debt was $4.2 billion, 14% of GDP. There has
+                been a reduction in the ratio of debt to GDP. The ratio of total governmental debt to GDP in 2000, was
+                21.7%; in 2001, it was 17.5%, and in 2002, it was 15.4%. It rose to 19.2% in 2019.</p>
             <figure class="mr-0 mx-auto">
-                <p><img class="scaled" src="./assets/images/econ_growth.jpg" alt="Graph of economic growth of Kazakhstan ">
+                <p><img class="scaled" src="./assets/images/econ_growth.jpg"
+                        alt="Graph of economic growth of Kazakhstan ">
                 <figcaption>Economic growth of Kazakhstan</figcaption>
             </figure>
-            <p>Kazakhstan's economy, supported by rising oil output and prices, grew at an average of 8% per year until 2013, before suffering a slowdown in 2014 and 2015. Kazakhstan was the first former Soviet Republic to repay all of its debt to the International Monetary Fund, 7 years ahead of schedule.</p>
-            <p>In September 2002, Kazakhstan became the first country in the CIS to receive an investment grade credit rating from a major international credit rating agency. By late December 2003, Kazakhstan's gross foreign debt was about $22.9 billion. Total governmental debt was $4.2 billion, 14% of GDP. There has been a reduction in the ratio of debt to GDP. The ratio of total governmental debt to GDP in 2000, was 21.7%; in 2001, it was 17.5%, and in 2002, it was 15.4%. It rose to 19.2% in 2019.</p>
-            <p>According to the 2010–11 World Economic Forum in Global Competitiveness Report, Kazakhstan was ranked 72nd in the world in economic competitiveness. One year later, the Global Competitiveness Report ranked Kazakhstan 50th in most competitive markets.</p>
+            <p>According to the 2010–11 World Economic Forum in Global Competitiveness Report, Kazakhstan was ranked
+                72nd in the world in economic competitiveness. One year later, the Global Competitiveness Report ranked
+                Kazakhstan 50th in most competitive markets.</p>
 
             <h4>Foreign Trade</h4>
-            <p>Kazakhstan's foreign trade turnover in 2018 was $93.5 billion, which is 19.7% more compared to 2017. Export in 2018 reached $67 billion (+25.7% vs 2017) and import was $32.5 billion (+9.9% vs 2017). Exports accounted for 40.1% of Kazakhstan's gross domestic product (GDP) in 2018. Kazakhstan exports 800 products to 120 countries.</p>
+            <p>Kazakhstan's foreign trade turnover in 2018 was $93.5 billion, which is 19.7% more compared to 2017.
+                Export in 2018 reached $67 billion (+25.7% vs 2017) and import was $32.5 billion (+9.9% vs 2017).
+                Exports accounted for 40.1% of Kazakhstan's gross domestic product (GDP) in 2018. Kazakhstan exports 800
+                products to 120 countries.</p>
             <h4>Green economy</h4>
-            <p>Kazakhstan launched the Green Economy Plan in 2013. It committed Kazakhstan to meet 50% of its energy needs from alternative and renewable sources by 2050. The green economy was projected to increase GDP by 3% and create some 500,000 jobs. The government set prices for energy produced from renewable sources. The price of 1 kilowatt-hour for energy produced by wind power plants was set at 22.68 tenge ($0.12), for 1 kilowatt-hour produced by small hydro-power plants 16.71 tenges ($0.09), and from biogas plants 32.23 tenges ($0.18).</p>
+            <p>Kazakhstan launched the Green Economy Plan in 2013. It committed Kazakhstan to meet 50% of its energy
+                needs from alternative and renewable sources by 2050. The green economy was projected to increase GDP by
+                3% and create some 500,000 jobs. The government set prices for energy produced from renewable sources.
+                The price of 1 kilowatt-hour for energy produced by wind power plants was set at 22.68 tenge ($0.12),
+                for 1 kilowatt-hour produced by small hydro-power plants 16.71 tenges ($0.09), and from biogas plants
+                32.23 tenges ($0.18).</p>
         </div>
     </div>
 
-    <div id="credits" class="footer">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Credits</h2>
+            </div>
+            <div class="modal-body">
+                <h4>Most visited websites:</h4>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/" target="_blank">Geeks For Geeks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                </ul>
+                <h4>Information about Kazakhstan was taken from </h4>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Kazakhstan" target="_blank">Wikipedia: Kazakhstan</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h3>Created by: Galina Overchuk for PS8 CS50x</h3>
+            </div>
+        </div>
+
+    </div>
+    <div id="credits" class="ftr">
         <p>Copyright &copy;</p>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

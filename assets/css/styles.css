@@ -1,27 +1,30 @@
-/* General */
-.general {
-    margin: 20px;
+figure {
+  float      : right;
+  text-align : center;
+  font-style : italic;
+  font-size  : smaller;
+  text-indent: 0;
+  border     : thin silver solid;
+  padding    : 0.5em;
 }
 
-.flag, .emblem {
-    float: right;
-    margin: 0 0 15px 20px;
-    padding: 15px;
-    width: fit-content;
-    text-align: center;
-    font-style: italic;
-    font-size: smaller;
-    text-indent: 0;
-    border: thin silver solid;
-    border-radius: 5px;
+figcaption {
+  background-color: rgb(212, 212, 212);
 }
 
 #flag {
-    width: 100%;
-    max-width: 385px;
+  width: 400px;
 }
 
 #emblem {
-    width: 100%;
-    max-width: 315px;
+  width: 300px;
+}
+
+@media(max-width: 900px) {
+  figure {
+    display: block;
+    margin : 0 auto;
+    float  : none;
+  }
+
 }
